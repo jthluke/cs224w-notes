@@ -23,7 +23,7 @@ If there are two behavior $$A$$ and $$B$$ in the network and each node can adopt
 
 where rows correspond to node $$v$$'s behavior, columns correspond to node $$w$$'s behavior, and entries represent each node's payoff.
 
-Let's analyze a node with $$d$$ neighbors, and let $$p$$ be the fraction of nodes which have adopted $$A$$. The payoff for choosing $$A$$ is $$apd$$ and the payoff for choosing $$B$$ is $$b(1-p)d$$. Hence the node adopts behavior $$A$$ if the follwoing is met: 
+Let's analyze a node with $$d$$ neighbors, and let $$p$$ be the fraction of nodes which have adopted $$A$$. The payoff for choosing $$A$$ is $$apd$$ and the payoff for choosing $$B$$ is $$b(1-p)d$$. Hence the node adopts behavior $$A$$ if the following is met: 
 $$apd > b(1-p)d \implies p > \frac{b}{a+b}$$
 
 We define $$q = \frac{b}{a+b}$$ to be the **threshold** fraction of a node's neighbors required for the node to choose $$A$$ i.e. requires $$p > q$$.

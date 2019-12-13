@@ -61,7 +61,7 @@ A node can adopt both behaviors and become $$AB$$ by paying a cost $$c$$.  The r
 | AB| a | b | max(a,b)|
 
 ### Example: Infinite path graph 
-Let us examine an infinite path graph where everyone begins with behavior $$B$$ except for three nodes of the following cases.  Let us also set $$b=1$$.
+Let us examine an infinite path graph where everyone begins with behavior/product $$B$$ except for three nodes of the following cases.  Let us also set $$b=1$$.
 
 **Case 1**:**A-w-B** 
 ![decision_case_1](../assets/img/decision_model_1.png?style=centerme)
@@ -76,6 +76,10 @@ Payoffs for $$w$$: $$A: a$$, $$B: 1$$, $$AB: a+1-c$$
 Payoffs for $$w$$: $$A: a$$, $$B: 1$$, $$AB: max(a, 1) + 1 -c$$
 
 ![decision_case_4](../assets/img/adoption_graph_general.jpg)
+
+The graphs show how different regions of $$(a,c)$$ values impact the decision-based diffusion:
+- B->A (Direct Conquest): If $$a$$ and $$c$$ are both high, then the cost of being compatible to both products is not worth it and conversion to $$A$$ is direct
+- B->AB->A (Infiltration): If $$a$$ is high and $$c$$ is lower, users first transition to $$AB$$ before fully committing to $$A$$  
 
 # Probabilistic Diffusion
 ## Epidemic Model based on Random Trees

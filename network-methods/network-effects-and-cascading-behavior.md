@@ -32,7 +32,7 @@ We define $$q = \frac{b}{a+b}$$ to be the **threshold** fraction of a node's nei
 Scenario:
 - Graph where all nodes start with $$B$$
 - Small set $$S$$ of early adopters of $$A$$. Hardwire this set such that these nodes will persistently use $$A$$ regardless of payoff
--Set $$a=b-\epsilon$$ and $$q = 0.5$$ for a small constant $$\epsilon>0$$. Interpretation: I adopt $$A$$ if more than 50\% of my neighbors adopt $$A$$.
+-Set $$a=b-\epsilon$$ and $$q = 0.5$$ for a small constant $$\epsilon>0$$. Interpretation: I adopt $$A$$ if more than 50% of my neighbors adopt $$A$$.
 ![Example of decision-based diffusion](../assets/gif/decision_based_network_spreading_example.gif)
 
 ### Case Study: [Modelling Protest Recruitment on social networks](https://arxiv.org/abs/1111.5595)
@@ -46,13 +46,13 @@ For each user (node):
 Key Insights:
 - The distribution of activation threshold had two local peaks: i) at $$\frac{k_{a}}{k_{in}} \approx 0$$, indicating many self-active users who join with without social pressure ii) at $$\frac{k_{a}}{k_{in}} \approx 0.5$$ indicating many users join once half their neighbors have. Remainder of distribution mostly uniform.
 ![Activation threshold distribution](../assets/img/activation_threshold_distribution.jpg)
-- A "burst" of neighbors joining the movement has greater impact on users with high threshold 
+- A "burst" of neighbors joining the movement has greater impact on users with high threshold and lesser impact on users with low threshold
 - Most cascades were small
 - Larger cascades were started by users with higher $$k$$-core number i.e. more central. The $$k$$-core is defined as the largest connected subgraph where every node has at least degree $$k$$ and can be evaluated by iteratively removing nodes with degree less than $$k$$.
 ![k-core decomposition](../assets/img/k-core.jpg)
 
 ## Extending Game Theoretic Model: multi-behavior adoption
-A node can adopt both behaviors and become $$AB$$ by paying a cost $$c$$.
+A node can adopt both behaviors and become $$AB$$ by paying a cost $$c$$.  The resulting payoff matrix (without cost $$c$$ applied) is as follows:
 
 |   | A | B | AB |
 |---|---|---|----|
@@ -61,7 +61,7 @@ A node can adopt both behaviors and become $$AB$$ by paying a cost $$c$$.
 | AB| a | b | max(a,b)|
 
 ### Example: Infinite path graph 
-Let examine an infinite path graph where everyone begins with behavior $$B$$ except for three nodes of the following cases.  Let us also set $$b=1$$.
+Let us examine an infinite path graph where everyone begins with behavior $$B$$ except for three nodes of the following cases.  Let us also set $$b=1$$.
 
 **Case 1**:**A-w-B** 
 ![decision_case_1](../assets/img/decision_model_1.png?style=centerme)
